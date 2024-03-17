@@ -17,26 +17,34 @@
             cursor: pointer; 
         }
 
-        .article-container {
-            width: 600px; 
-            margin: 0 auto; 
-            border: 1px solid #ccc;
-            padding: 20px; 
+           
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            padding: 20px;
         }
 
-       
-        .article-content {
-            max-width: 100%; 
-            margin: 0; 
-            padding: 0; 
+        .portfolio-item {
+            width: calc(33.33% - 20px); 
+            margin-bottom: 20px; 
+            background-color: #f0f0f0; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
         }
 
-        
-        .article-image {
-            max-width: 100%; 
-            height: auto; 
-            display: block; 
-            margin-top: 20px; 
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 20px); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: 100%; 
+            }
         }
         
     </style>
@@ -62,6 +70,25 @@
 
         
     </main>
+
+    <section class="portfolio">
+        <section class="portfolio-item">
+            <h2>Animation</h2>
+            
+        </section>
+        <section class="portfolio-item">
+            <h2>Games</h2>
+            
+        </section>
+        <section class="portfolio-item">
+            <h2>3D Assets</h2>
+            
+        </section>
+        <section class="portfolio-item">
+            <h2>Graphics</h2>
+            
+        </section>
+    </section>
 
     <footer>
         <p>&copy; 2024 AnimationBlogs. All rights reserved.</p>
