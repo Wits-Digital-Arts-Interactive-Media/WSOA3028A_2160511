@@ -1,49 +1,37 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    const homeBtn = document.getElementById('homeBtn');
-    const blogBtn = document.getElementById('blogBtn');
-    const portfolioBtn = document.getElementById('portfolioBtn');
-    const documentBtn = document.getElementById('documentBtn');
-    const contactBtn = document.getElementById('contactBtn');
-    const essayBtn = document.getElementById('essayBtn');
+    setupNavigationButtons();
+    setLinksToOpenInNewTab();
+})
+    
+function setupNavigationButtons() {
+    const buttons = [
+        { id: 'homeBtn', url: 'index.html' },
+        { id: 'blogBtn', url: 'blog.html' },
+        { id: 'portfolioBtn', url: 'portfolio.html' },
+        { id: 'documentBtn', url: 'document.html' },
+        { id: 'contactBtn', url: 'contact.html' },
+        { id: 'essayBtn', url: 'essay.html' },
+        { id: 'recentBlogsBtn', url: 'blog.html' }
+    ];
+    
+    buttons.forEach(button => {
+        const btnElement = document.getElementById(button.id);
+        if (btnElement) {
+            btnElement.addEventListener('click', function() {
+                window.location.href = button.url;
+            });
+        }
+    });
+}
     
     
-    const recentBlogsBtn = document.getElementById('recentBlogsBtn');
-
-    
-    homeBtn.addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-
-    blogBtn.addEventListener('click', function() {
-        window.location.href = 'blog.html';
-    });
-
-    portfolioBtn.addEventListener('click', function() {
-        window.location.href = 'portfolio.html';
-    });
-
-    documentBtn.addEventListener('click', function() {
-        window.location.href = 'document.html';
-    });
-
-    contactBtn.addEventListener('click', function() {
-        window.location.href = 'contact.html';
-    });
-
-    essayBtn.addEventListener('click', function() {
-        window.location.href = 'essay.html';
-    });
-
-    recentBlogsBtn.addEventListener('click', function() {
-        window.location.href = 'blog.html';
-    });
-
-    const links = document.querySelectorAll('a');
+function setLinksToOpenInNewTab() {
+    const links = document.querySelectorAll("a");
     links.forEach(link => {
-        link.setAttribute('target', '_blank');
+        link.setAttribute("target", "_blank");
     });
-});
+}
 
 
