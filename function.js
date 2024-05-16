@@ -28,9 +28,9 @@ function setupNavigationButtons() {
     
     
 function setLinksToOpenInNewTab() {
-    const links = document.querySelectorAll("a");
+    const links = document.querySelectorAll('a');
     links.forEach(link => {
-        link.setAttribute("target", "_blank");
+        link.setAttribute('target', '_blank');
     });
 }
 
