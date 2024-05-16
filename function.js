@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
     recentBlogsBtn.addEventListener('click', function() {
         window.location.href = 'blog.html';
     });
+
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.setAttribute('target', '_blank');
+    });
 });
 
 
