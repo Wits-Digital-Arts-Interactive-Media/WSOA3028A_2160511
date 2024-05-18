@@ -3,6 +3,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setupNavigationButtons();
     setLinksToOpenInNewTab();
+
+    const toggleButton = document.getElementById("toggleButton");
+    const extraContent = document.getElementById("extraContent");
+
+    toggleButton.addEventListener("click", function() {
+        if (extraContent.style.display === "none") {
+            extraContent.style.display = "block";
+            toggleButton.textContent = "Read Less";
+        } else {
+            extraContent.style.display = "none";
+            toggleButton.textContent = "Read More";
+        }
+    });
+
 })
     
 function setupNavigationButtons() {
