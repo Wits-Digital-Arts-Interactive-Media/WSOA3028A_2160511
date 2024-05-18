@@ -3,19 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setupNavigationButtons();
     setLinksToOpenInNewTab();
-
-    const toggleButton = document.getElementById('toggleButton');
-    const extraContent = document.getElementById('extraContent');
-
-    toggleButton.addEventListener('click', function() {
-        if (extraContent.style.display === 'none') {
-            extraContent.style.display = 'block';
-            toggleButton.textContent = 'Read Less';
-        } else {
-            extraContent.style.display = 'none';
-            toggleButton.textContent = 'Read More';
-        }
-    });
+    setupReadMoreButtons();
 
 })
     
@@ -47,5 +35,21 @@ function setLinksToOpenInNewTab() {
         link.setAttribute('target', '_blank');
     });
 }
+
+function setupReadMoreButtons() {
+    const toggleButtons = document.querySelectorAll('.toggleButton');
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const extraContent = this.nextElementSibling;
+            if (extraContent.style.display === 'none' || extraContent.style.display === '') {
+                extraContent.style.display = 'block';
+                this.textContent = 'Read Less';
+            } else {
+                extraContent.style.display = 'none';
+                this.textContent = 'Read More';
+            }
+        });
+    });
+}   
 
 
