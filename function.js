@@ -41,15 +41,17 @@ function setupReadMoreButtons() {
     toggleButtons.forEach(button => {
         button.addEventListener('click', function() {
             const extraContent = this.nextElementSibling;
-            if (extraContent.style.display === 'none' || extraContent.style.display === '') {
-                extraContent.style.display = 'block';
-                this.textContent = 'Read Less';
-            } else {
-                extraContent.style.display = 'none';
-                this.textContent = 'Read More';
+            if (extraContent.classList.contains('extra-content')) {
+                if (extraContent.style.display === 'none' || extraContent.style.display === '') {
+                    extraContent.style.display = 'block';
+                    this.textContent = 'Read Less';
+                } else {
+                    extraContent.style.display = 'none';
+                    this.textContent = 'Read More';
+                }
             }
         });
     });
-}   
+}  
 
 
