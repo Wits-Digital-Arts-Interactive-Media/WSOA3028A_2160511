@@ -1,0 +1,44 @@
+.specialties-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.specialty {
+    text-align: center;
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specialty img {
+    max-width: 100%;
+    height: auto;
+}
+
+.specialty h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.specialty p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.specialty button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.specialty button:hover {
+    background-color: #0056b3;
+}
