@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupNavigationButtons();
     setLinksToOpenInNewTab();
     setupReadMoreButtons();
+    setupLearnMoreButtons();
 
 })
     
@@ -54,4 +55,12 @@ function setupReadMoreButtons() {
     });
 }  
 
+function setupLearnMoreButtons() {
+    const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = 'portfolio.html';
+        });
+    });
+}
 
