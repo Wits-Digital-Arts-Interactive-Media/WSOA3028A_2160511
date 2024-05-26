@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, hsl(182, 71%, 71%), #db87bb);
+    background: linear-gradient(to right, hsl(222, 71%, 71%), #db87bb);
     color: #333;
     line-height: 1.6;
 }
@@ -34,13 +34,13 @@ nav {
 }
 
 header {
-    background-color: #333;
+    background-color: #404040;
     color: #fff;
     padding: 20px 0;
 }
 
 header .logo img {
-    max-width: 150px; 
+    max-width: 100px; 
     height: auto;
     margin-right: 15px; 
 }
@@ -74,7 +74,7 @@ footer .footer-content {
 }
 
 section.page-title {
-    background-color: #f4f4f4;
+    background-color: hwb(236 62% 4%);
     padding: 20px 0;
     text-align: center;
     width: 100%;
