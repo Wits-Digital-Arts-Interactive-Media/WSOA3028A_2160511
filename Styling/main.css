@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #63c6d3, #cb49b3);
+    background: linear-gradient(to right, hsl(182, 71%, 71%), #db87bb);
     color: #333;
     line-height: 1.6;
 }
@@ -53,7 +53,7 @@ header .logo h1 {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     margin-top: 20px;
 }
@@ -66,6 +66,7 @@ footer .footer-content {
     font-size: 16px;
     margin: 0;
 }
+
 
 
 
