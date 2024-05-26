@@ -67,6 +67,12 @@ footer .footer-content {
     margin: 0;
 }
 
+section.page-title {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
 
 
 
