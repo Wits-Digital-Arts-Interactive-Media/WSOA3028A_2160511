@@ -39,6 +39,12 @@ header {
     padding: 20px 0;
 }
 
+header .logo img {
+    max-width: 150px; 
+    height: auto;
+    margin-right: 15px; 
+}
+
 header .logo {
     display: inline-block;
 }
