@@ -22,9 +22,12 @@ button:hover {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav {
@@ -37,7 +40,10 @@ header {
     background-color: #404040;
     color: #fff;
     padding: 20px 0;
+    width: 100%;
 }
+
+
 
 header .logo img {
     max-width: 100px; 
@@ -70,7 +76,7 @@ footer .footer-content {
     align-items: center;
     flex-wrap: wrap;
     font-size: 16px;
-    margin: 0;
+    margin: 10px;
 }
 
 section.page-title {
@@ -78,6 +84,7 @@ section.page-title {
     padding: 20px 0;
     text-align: center;
     width: 100%;
+    margin-top: 100px;
 }
 
 
