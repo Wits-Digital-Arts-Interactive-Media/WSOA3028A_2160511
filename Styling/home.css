@@ -39,7 +39,7 @@
 .specialties-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px;
     background-color: #f8f8f8;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -86,6 +86,7 @@
     transform: scale(1.2); 
     background-color: #0056b3;
 }
+
 
 .motion-image {
     text-align: center;
