@@ -14,7 +14,7 @@ function setupNavigationButtons() {
         { id: 'blogBtn', url: 'blog.html' },
         { id: 'portfolioBtn', url: 'portfolio.html' },
         { id: 'documentBtn', url: 'document.html' },
-        { id: 'contactBtn', url: 'contact.html' },
+        { id: 'profileBtn', url: 'profile.html' },
         { id: 'essayBtn', url: 'essay.html' },
         { id: 'recentBlogsBtn', url: 'blog.html' }
     ];
