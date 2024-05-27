@@ -66,17 +66,19 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
-    text-align: center;
-    margin-top: 20px;
+    width: 100%;
 }
 
-footer .footer-content {
+footer .container {
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+footer .footer-content {
     font-size: 16px;
-    margin: 10px;
 }
 
 section.page-title {
@@ -84,7 +86,8 @@ section.page-title {
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    
 }
 
 
