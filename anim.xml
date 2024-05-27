@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  
+  <circle cx="50" cy="50" r="20" fill="purple">
+    <animate attributeName="cx" values="50;150;50" dur="5s" repeatCount="indefinite" />
+  </circle>
+  
+  
+  <rect x="30" y="130" width="40" height="40" fill="blue">
+    <animate attributeName="y" values="130;30;130" dur="4s" repeatCount="indefinite" />
+  </rect>
+
+  
+  <polygon points="100,15 120,60 80,60" fill="green">
+    <animate attributeName="points" values="100,15 120,60 80,60; 120,15 140,60 100,60; 100,15 120,60 80,60" dur="6s" repeatCount="indefinite" />
+  </polygon>
+
+  
+  <path d="M50,150 Q100,100 150,150" stroke="yellow" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M50,150 Q100,100 150,150; M50,150 Q100,50 150,150; M50,150 Q100,100 150,150" dur="8s" repeatCount="indefinite" />
+  </path>
+</svg>

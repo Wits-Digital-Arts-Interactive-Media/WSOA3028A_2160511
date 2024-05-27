@@ -3,7 +3,9 @@ body {
     background: linear-gradient(to right, hsl(222, 71%, 71%), #db87bb);
     color: #333;
     line-height: 1.6;
+   
 }
+
 
 button {
     padding: 10px 20px;

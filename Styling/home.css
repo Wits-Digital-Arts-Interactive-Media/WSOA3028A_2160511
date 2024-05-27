@@ -4,9 +4,11 @@
 .article-container {
     width: 1100px; 
     margin: 0 auto; 
+    background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 20px; 
     font-size: 25px;
+
 }
 
 
@@ -89,4 +91,14 @@
 
 .specialty button:hover {
     background-color: #0056b3;
+}
+
+.motion-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.motion-image svg {
+    max-width: 100%;
+    height: auto;
 }
