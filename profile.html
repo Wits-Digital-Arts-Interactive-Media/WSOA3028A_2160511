@@ -9,6 +9,8 @@
     <title>Profile</title>
     <link rel="stylesheet" href="Styling/main.css">
     <link rel="stylesheet" href="Styling/contact.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
     <style>
     </style>
 </head>
@@ -65,8 +67,8 @@
     </main>
 
     <section class="contcontainer">
-        <h1>Thank you for supporting the Blog Series*smiley face*</h1>
-        <form action="submit.php" method="post">
+        <h1>Thank you for supporting the Blog Series 😊</h1>
+        <form id="contactForm">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -92,6 +94,7 @@
     </footer>
 
     <script src="function.js"></script>
+    <script src="form.js"></script>
 
 </body>
 </html>

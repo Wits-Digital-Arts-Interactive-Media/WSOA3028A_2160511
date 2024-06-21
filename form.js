@@ -1,30 +1,33 @@
-const functions = require('firebase-functions');
-const nodemailer = require('nodemailer');
+var firebaseConfig = {
+    apiKey: "AIzaSyAfYQNOCvd8JnunfdGXp5hvmzwHKuSQCOk",
+    authDomain: "kceearts-exam-website.firebaseapp.com",
+    projectId: "kceearts-exam-website",
+    storageBucket: "kceearts-exam-website.appspot.com",
+    messagingSenderId: "1044985383613",
+    appId: "1:1044985383613:web:01daae68bfb6e8491845d4",
+    measurementId: "G-PQK0MEDBKP"
+};
 
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
 
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'your-email@gmail.com',
-        pass: 'your-email-password'
-    }
-});
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
-
-exports.submitForm = functions.https.onRequest((req, res) => {
-    const { name, email, message } = req.body;
-
-    const mailOptions = {
-        from: email,
-        to: 'your-email@gmail.com',
-        subject: `New message from ${name}`,
-        text: message
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).send(error.toString());
-        }
-        res.status(200).send('Message sent successfully');
+    db.collection("contacts").add({
+        name: name,
+        email: email,
+        message: message,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(function(docRef) {
+        alert("Thank you for your message! We'll get back to you soon.");
+        document.getElementById('contactForm').reset();
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
     });
 });
