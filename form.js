@@ -13,9 +13,9 @@ var db = firebase.firestore();
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
 
     db.collection("contacts").add({
         name: name,
