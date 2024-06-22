@@ -1,3 +1,16 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyAfYQNOCvd8JnunfdGXp5hvmzwHKuSQCOk",
+    authDomain: "kceearts-exam-website.firebaseapp.com",
+    projectId: "kceearts-exam-website",
+    storageBucket: "kceearts-exam-website.appspot.com",
+    messagingSenderId: "1044985383613",
+    appId: "1:1044985383613:web:01daae68bfb6e8491845d4",
+    measurementId: "G-PQK0MEDBKP"
+};
+
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
