@@ -8,19 +8,17 @@ admin.initializeApp();
 
 exports.addContact = onRequest((req, res) => {
   cors(req, res, () => {
-    // Only allow POST requests
+    
     if (req.method !== "POST") {
       return res.status(405).send("Method Not Allowed");
     }
-
-    // Extracting data from the request body
+    
     const {name, email, message} = req.body;
 
     if (!name || !email || !message) {
       return res.status(400).send("Missing fields");
     }
 
-    // Adding data to Firestore
     return admin.firestore().collection("contacts").add({
       name,
       email,
