@@ -22,6 +22,40 @@
     margin-bottom: 20px;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.portfolio-image {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.description-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description-btn:hover {
+    background-color: #555;
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
 .portfolio-empty-container {
     width: calc(25% - 20px); 
     height: 300px; 

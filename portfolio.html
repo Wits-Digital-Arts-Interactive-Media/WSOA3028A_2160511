@@ -9,8 +9,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="Styling/main.css">
     <link rel="stylesheet" href="Styling/portfolio.css">
-    <style> 
-    </style>
+    
 </head>
 <body>
     <header>
@@ -51,7 +50,21 @@
         <section class="portfolio-item" id="animation">
             <h2 class="portfolio-title">Animation</h2>
             
-            <img class="portfolio-empty-container" src="Images/anim6.png">
+            <figure class="portfolio-empty-container">
+                <img class="portfolio-image" src="Images/anim6.png" alt="Astronaut in a surreal landscape">
+                <figcaption>
+                    <button class="description-btn" onclick="toggleDescription('desc-anim6')">More Info</button>
+                    <p class="description" id="desc-anim6">In a serene and dreamlike setting, an adorable astronaut figure stands in a shallow pool of water, surrounded by a surreal landscape. Soft, ambient light reflects off the water's surface, creating a gentle glow around the astronaut.</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="portfolio-empty-container">
+                <img class="portfolio-image" src="Images/anim7.png" alt="Astronaut in a surreal landscape">
+                <figcaption>
+                    <button class="description-btn" onclick="toggleDescription('desc-anim7')">More Info</button>
+                    <p class="description" id="desc-anim7">In a serene and dreamlike setting, an adorable astronaut figure stands in a shallow pool of water, surrounded by a surreal landscape. Soft, ambient light reflects off the water's surface, creating a gentle glow around the astronaut.</p>
+                </figcaption>
+            </figure>
             <img class="portfolio-empty-container" src="Images/anim7.png">
             <img class="portfolio-empty-container" src="Images/anim8.png">
             <img class="portfolio-empty-container" src="Images/anim9.png">
@@ -120,5 +133,6 @@
         </section>
     </footer>
     <script src="function.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>
