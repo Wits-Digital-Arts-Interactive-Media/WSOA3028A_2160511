@@ -9,8 +9,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="Styling/main.css">
     <link rel="stylesheet" href="Styling/contact.css">
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <header>
@@ -37,7 +36,7 @@
         </section>
     </section>
 
-    <section class="profile-container">
+    <section class="profile-container" data-aos="fade-up">
         <img src="Images/ProfileImg.png" alt="Profile Picture" class="profile-image">
         <article class="profile-info">
             <h2>Kaycee Chantelle Mashilo</h2>
@@ -93,7 +92,9 @@
 
     <script src="function.js"></script>
     <script src="form.js"></script>
-    
-
+    <script src="transforms.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

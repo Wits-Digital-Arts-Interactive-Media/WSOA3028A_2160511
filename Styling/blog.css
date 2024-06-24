@@ -49,3 +49,18 @@
 .extra-content {
     display: none;
 }
+
+@keyframes custom-slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+[data-aos="custom-slide-up"] {
+    animation: custom-slide-up 1.5s ease-out forwards;
+}
