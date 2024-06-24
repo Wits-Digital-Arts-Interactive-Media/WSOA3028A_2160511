@@ -18,7 +18,7 @@
 .portfolio-title {
     font-size: 24px;
     margin-bottom: 20px;
-    font-family: 'Fredoka One', 'Nunito', sans-serif;
+    
 }
 
 .image-container {
@@ -49,6 +49,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: 'Quicksand', 'Poppins', sans-serif;
 }
 
 .description-btn:hover {
@@ -60,6 +61,7 @@
     display: none;
     margin-top: 10px;
     font-size: 16px;
+    font-family: 'Quicksand', 'Poppins', sans-serif;
 }
 
 .portfolio-empty-container {
