@@ -3,9 +3,11 @@
 .article-container {
     width: 1100px; 
     margin: 0 auto; 
-    border: 1px solid #ccc;
+    border: 1px solid #7757c8;
     padding: 20px; 
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
 }
 
 

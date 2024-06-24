@@ -7,7 +7,7 @@
     width: 100%; 
     margin-bottom: 30px; 
     background-color: #f0f0f0; 
-    border: 1px solid #ccc; 
+    border: 2px solid #6b64f5; 
     box-sizing: border-box;
     padding: 40px;
     text-align: center;
@@ -16,8 +16,9 @@
 
 
 .portfolio-title {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
+    font-family: 'Roboto';
     
 }
 
@@ -30,7 +31,7 @@
 
 .portfolio-image {
     width: 100%;
-    border: 2px solid #5424ff;
+    border: 1px solid #5424ff;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -43,17 +44,17 @@
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #6b64f5;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    font-family: 'Quicksand', 'Poppins', sans-serif;
+    font-family: 'Roboto';
 }
 
 .description-btn:hover {
-    background-color: #555;
+    background-color: #79a3ff;
     transform: scale(1.1);
 }
 
@@ -61,7 +62,7 @@
     display: none;
     margin-top: 10px;
     font-size: 16px;
-    font-family: 'Quicksand', 'Poppins', sans-serif;
+    font-family: 'Roboto';
 }
 
 .portfolio-empty-container {

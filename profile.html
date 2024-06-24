@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="Styling/main.css">
     <link rel="stylesheet" href="Styling/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@400;700&family=Nunito:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Nunito:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Archivo+Black:wght@400;700&family=Nunito:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,54 +33,59 @@
         </section>
     </header>
 
-    <section class="page-title">
-        <section class="container">
-            <h2>Profile</h2>
-        </section>
-    </section>
-
-    <section class="profile-container" data-aos="fade-up">
-        <img src="Images/ProfileImg.png" alt="Profile Picture" class="profile-image">
-        <article class="profile-info">
-            <h2>Kaycee Chantelle Mashilo</h2>
-            <p>An animation enthusiast with a passion for storytelling through motion. She is currently studying at University of Witwatersrand towards a Digital Artist degree. She has worked in the digital industry for a one year internship and has chosen to rather focus on cultivating her skills for freelance projects in the industry whilst studying. Working hard everyday to learn new skills and improve is her driving force towards success as a professional, sharing the love for her work and experience along the journey. Her main passions revolve around: </p>
-            <ul>
-               <li>Animation</li>
-               <li>Game Development</li>
-               <li>Web Development</li>
-               <li>Graphic design</li>
-               
-            </ul>
-            <p>Creating this Blog series is intended to share more information about her passions as researching is imperative for her growth in knowledge. Learning is important to her and she encourages it for others.</p>
-        </article>
-        
-    </section>
-
     <main>
+        
+        <section class="page-title">
+            <section class="container">
+                <h2>Profile</h2>
+            </section>
+        </section>
+    
+        <section class="profile-container" data-aos="fade-up">
+            <img src="Images/ProfileImg.png" alt="Profile Picture" class="profile-image">
+            <article class="profile-info">
+                <h2>Kaycee Chantelle Mashilo</h2>
+                <p>An animation enthusiast with a passion for storytelling through motion. She is currently studying at University of Witwatersrand towards a Digital Artist degree. She has worked in the digital industry for a one year internship and has chosen to rather focus on cultivating her skills for freelance projects in the industry whilst studying. Working hard everyday to learn new skills and improve is her driving force towards success as a professional, sharing the love for her work and experience along the journey. Her main passions revolve around: </p>
+                <ul>
+                   <li>Animation</li>
+                   <li>Game Development</li>
+                   <li>Web Development</li>
+                   <li>Graphic design</li>
+                   
+                </ul>
+                <p>Creating this Blog series is intended to share more information about her passions as researching is imperative for her growth in knowledge. Learning is important to her and she encourages it for others.</p>
+            </article>
+            
+        </section>
+
         <article>
             <h2></h2>
             <p>Feel free to reach out to us for any information regarding our industry. You are welcome to make some commentary on any blog posts or give any necessary feedback if you would like. Here is a form you can fill in and we will get back to you as soon as we get the chance.</p>
-            <p>PS: I might add an email for users to reach out and possibly have a phone number as well. I would also like to have a section with a location as seen on other websites.</p>
+            
         </article>
 
-        
+        <section class="contcontainer">
+            <h1>Thank you for supporting KceeArts😊</h1>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="info-bar">
+            <article id="date-time"></article>
+            <article id="weather"></article>
+        </section>
+
     </main>
-
-    <section class="contcontainer">
-        <h1>Thank you for supporting the Blog Series 😊</h1>
-        <form id="contactForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="text" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </section>
 
     <footer>
         <section class="container">
@@ -90,11 +98,12 @@
         </section>
     </footer>
 
-    <script src="function.js"></script>
-    <script src="form.js"></script>
-    <script src="transforms.js"></script>
+    <script src="js_functions/function.js"></script>
+    <script src="js_functions/transforms.js"></script>
+    <script src="js_functions/form.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js_functions/api.js"></script>
 </body>
 </html>

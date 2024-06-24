@@ -10,15 +10,17 @@
     margin: 0 auto;
     margin-bottom: 30px; 
     background-color: #f0f0f0; 
-    border: 1px solid #ccc; 
+    border: 2px solid #6b64f5; 
     box-sizing: border-box;
     padding: 20px;
     border-radius: 30px;
+    font-family: 'Roboto';
 }
 
 .blog-title {
     font-size: 30px;
     margin-bottom: 10px;
+    font-family: 'Roboto';
 }
 
 .blog-date {
@@ -29,7 +31,8 @@
 
 .blog-content {
     line-height: 1.6;
-    font-size: 20px; 
+    font-size: 20px;
+    font-family: 'Roboto'; 
 }
 
 .blog-image {
@@ -44,6 +47,7 @@
     font-size: 25px; 
     font-weight: bold; 
     margin-top: 20px; 
+    font-family: 'Roboto';
 }
 
 .extra-content {
